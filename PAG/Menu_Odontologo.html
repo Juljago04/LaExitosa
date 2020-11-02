@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="Menu.css" rel="stylesheet" type="text/css"/>
+    <link href="Odontologo.css" rel="stylesheet" type="text/css"/>
+    <script src="Menu.js"></script>
+    <script src="Odontologo.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <div class="maincontainer">
+            <div class="disp">&#9776;</div>
+            <div class="left" id="menu">
+                <br />
+                <br />
+                <br />
+                        <input type="button" value="Ver Agenda" id="AO" class="menubuttons2" onclick="scrollto('SeeAgenda')"/>
+                <br />
+                        <input type="button" value="Citas" id="CO" class="menubuttons2" onclick="citasO()"/>
+                <br />
+                        <input type="button" value="Historias Clinicas" id="HCO" class="menubuttons2" onclick="historiasO()"/>
+                <br />
+                        <input type="button" value="Diagnosticos" id="DO" class="menubuttons2" onclick="diagnosticosO()"/>
+                <br />
+                        <input type="button" value="Examenes" id="EO" class="menubuttons2" onclick="examenesO()"/>
+                <br />
+                        <input type="button" value="Cerrar Sesión" id="SignOut" class="closebutton" onclick="logout()" />
+            </div>
+                <div class="right"><img src="Images/BANNER.png"/><br /></div>
+                <div class="home"><img src="Images/homeimg.png"/>
+                </div><hr/>
+                <div class="Menu_Odontologo">
+                        <div class="SeeAgenda" id="SeeAgenda">
+                        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                        </div>  
+                </div>
+                </div>
+        </form>
+</body>
+</html>

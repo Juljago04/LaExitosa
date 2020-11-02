@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="Menu.css" rel="stylesheet" type="text/css"/>
+    <link href="ConsultaUsuario.css" rel="stylesheet" type="text/css"/>
+    <script src="Menu.js"></script>
+    <script src="ConsultaUsuario.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <div class="maincontainer">
+            <div class="disp">&#9776;</div>
+            <div class="left" id="menu">
+                <br />
+                <br />
+                <br />
+                        <input type="button" value="Citas" id="CU" class="menubuttons2" onclick="citasu()"/>
+                <br />
+                        <input type="button" value="Historias Clinicas" id="HCU" class="menubuttons2" onclick="scrollto('HCUser')"/>
+                <br />
+                        <input type="button" value="Diagnosticos" id="DU" class="menubuttons2" onclick="scrollto('DiagUser')"/>
+                <br />
+                        <input type="button" value="Examenes" id="EU" class="menubuttons2" onclick="scrollto('ExamsUser')"/>
+                <br />
+                        <input type="button" value="Cerrar Sesión" id="SignOut" class="closebutton" onclick="logout()" />
+            </div>
+                <div class="right"><img src="Images/BANNER.png"/></div><br />
+                <div class="home"><img src="Images/homeimg.png"/></div><hr/>
+                <div class="Menu_Usuario">
+                        <div class="HCUser" id="HCUser">
+                </br>
+                </br>
+                                <h1>Consultar Historia Clinica</h1>
+                                <p>Buscar por:&nbsp;<select class="texts">
+                                                    <option>Id_Paciente</option>
+                                                    <option>Id_Odontologo</option>
+                                                    <option>Codigo_Historia</option>
+                                                    <option>Codio_Diagnostico</option>
+                                                    </select></p>
+                                <p><input type="text" id="Text1" class="texts" placeholder="Dato"/></p>
+                                <p><input type="button" id="Button1" value="Consultar" class="buttons2" onclick="consultarHC()"/></p>        
+                                <div class="table">
+                                        <table class="tab" id="tabHC">
+                                                <tr>
+                                                    <th>Codigo_Historia</th>
+                                                    <th>Id_Paciente</th>
+                                                    <th>Cod_SGSSS</th>
+                                                    <th>F_Inicio</th>
+                                                    <th>RH</th>
+                                                    <th>Alergias</th>
+                                                    <th>Asma</th>
+                                                    <th>Lesiones</th>
+                                                    <th>Embarazo</th>
+                                                    <th>Peso</th>
+                                                    <th>Estatura</th>
+                                                    <th>Observaciones</th>
+                                                    <th>Id_Odontologo</th>
+                                                    <th>Cod_Diagnosico</th>
+                                                    <th>Descripcion</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                    <td>...</td>
+                                                </tr>
+                                            </table>
+                                        </br>
+                                        </br>
+                                        </br>    
+                                </div>                         
+                        </div><hr/>
+                        <div class="DiagUser" id="DiagUser">
+                </br>
+                </br>
+                                <h1>Consultar Diagnosticos</h1>
+                                <p>Buscar por:&nbsp;<select class="texts">
+                                                    <option>Codigo_Diagnostico</option>
+                                                    <option>Tipo</option>
+                                                    <option>Id_paciente</option>
+                                                    </select></p>
+                                <p><input type="text" id="Text1" class="texts" placeholder="Dato"/></p>
+                                <p><input type="button" id="Button1" value="Consultar" class="buttons2" onclick="consultarDiag()"/></p>
+                                <div class="table">
+                                    <table class="tab" id="tabDiag">
+                                        <tr>
+                                            <th>Codigo_Diagnostico</th>
+                                            <th>Tipo</th>
+                                            <th>Archivo Sintomas</th>
+                                        </tr>
+                                        <tr>
+                                            <td>...</td>
+                                            <td>...</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>...</td>
+                                            <td>...</td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>...</td>
+                                            <td>...</td>
+                                            <td>...</td>
+                                        </tr>
+                                    </table>
+                                </br>
+                                </br>
+                                </br> 
+                                </div>       
+                </div><hr/>
+                        <div class="ExamsUser" id="ExamsUser">
+                </br>
+                </br>
+                                <h1>Consultar Examenes</h1>
+                                <p>Buscar por:&nbsp;<select class="texts">
+                                             <option>Codigo Examen</option>
+                                             <option>Tipo</option>
+                                             <option>Id_Odontologo</option>
+                                             </select></p>
+                         <p><input type="text" id="Text1" class="texts" placeholder="Dato"/></p>
+                         <p><input type="button" id="Button1" value="Consultar" class="buttons2" onclick="consultarExam()"/></p>
+                         <div class="table">
+                             <table class="tab" id="tabExam">
+                                 <tr>
+                                     <th>Codigo_Examen</th>
+                                     <th>Tipo</th>
+                                     <th>Id_Odontologo</th>
+                                     <th>Descripcion</th>
+                                 </tr>
+                                 <tr>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                 </tr>
+                                 <tr>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                 </tr>
+                                 <tr>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                     <td>...</td>
+                                 </tr>
+                             </table>
+                         </br>
+                         </br>
+                         </br> 
+                        </div>                        
+                        </div>  
+                </div>
+       </div>
+    </form>
+</body>
+</html>

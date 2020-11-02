@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Acerca de Nosotros</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="Index.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Index.js"></script>
+</head>
+<body>
+    <form id="form1">
+    <nav class="div1">
+            <img src="Images/LOGO.png" class="img1" onclick="home()"/>
+            <ul>
+                <li class="ul"><a class="a" onclick="scrollto('contact')">Contactanos</a></li>
+                <li class="ul"><a class="a" href="Carnes.html">Tipos de Carnes</a>
+                </li>
+                <li class="ul"><a class="a" onclick="scrollto('slider')">Acerca de Nosotros</a>
+                    <ul>
+                        <li><a class="a" onclick="scrollto('services')">Misión</a></li>
+                        <li><a class="a" onclick="scrollto('services')">Visión</a></li>
+                        <li><a class="a" onclick="scrollto('services')">Objetivos</a></li>
+                    </ul>
+                    </li>
+                <li class="ul"><a class="a" href="Index.html#services">Servicios</a>
+                    <ul>
+                        <li><a class="a" href="Index.html#domicilio">Domicilio</a></li>
+                    </ul>
+                </li>
+                <li class="ul"><a class="a" href="Index.html">Inicio</a></li>
+            </ul>            
+        </nav>
+        <div class="slider" id="slider">
+            <ul>
+                <li><img src="Images/carne-fermentada-moda-carnivora-t.jpg" class="carrousel"/></li>
+                <li><img src="Images/carne-roja_0.jpg" class="carrousel"/></li>
+                <li><img src="Images/carne_assada_-_blog_1.jpg" class="carrousel"/></li>
+                <li><img src="Images/carnes-exoticas.jpg" class="carrousel"/></li>
+                <li><img src="Images/carne-de-cerdo-blanca-o-roja.jpg" class="carrousel"/></li>
+            </ul>
+        </div>
+        <section class="aboutus" id="aboutus">
+            <div class="Imgaboutus1"><img src="Images/Mision.png" ><p><br></p><h3>Misión:</h3><br> Satisfacer al cliente con buenos productos de calidad con equipo de trabajo calificado y certificado con buen servicio para crecer cada día más como empresa.</div>
+            <div class="Imgaboutus2"><img src="Images/Vision.jpeg" ><p><br></p><h3>Visión:</h3><br> Posesionarnos como una buena empresa en el mercado lograr un impacto significativo en la venta de productos cárnicos.
+                <p><br></p><h3>Políticas de Calidad:</h3><br> 
+                <p>Honestidad</p>
+                    <p>Respeto</p> 
+                    <p>Escucha</p>
+                    <p>Amabilidad</p>
+                </div>
+            <div class="Imgaboutus3"><img src="Images/Objetivos.png" ><p><br></p> <h3>Objetivo General:</h3><br> Satisfacer la necesidad del consumo de carne, calidad, higiene y sanidad para los consumidores. <p><br></p> <h3>Objetivo Específico:</h3><br> Eficiencia de en la venta de productos cárnicos.</div>
+        </section>
+        <section class="video" id="video">
+            <div class="textos">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mi erat. Duis ut diam est. Aenean vestibulum diam nisi, sit amet porta sapien pharetra bibendum. Quisque at tristique nisi, nec malesuada dui. Quisque eget accumsan augue. Phasellus sit amet maximus nulla. Ut ultricies nisi ut commodo eleifend. Donec ullamcorper venenatis mauris quis fermentum. Duis id tortor posuere tortor molestie viverra. Integer tincidunt dolor a urna luctus varius. Etiam ligula sem, mattis sed suscipit non, dictum quis elit. Ut at ultricies lacus, sit amet elementum ipsum. Nullam at odio tincidunt, pharetra diam non, blandit lectus.
+
+                     Maecenas pharetra consequat nisl vel tincidunt. Donec convallis laoreet felis eu fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu varius ex. Nam porttitor dolor eu pellentesque finibus. Morbi tempor convallis quam, sed dapibus orci gravida a. Etiam a posuere orci. Curabitur laoreet, enim vitae placerat tristique, lacus magna ullamcorper elit, sit amet tempor ante felis in purus. Quisque vulputate felis ipsum, eu blandit nibh fermentum vitae.
+        </p>
+            </div>
+            <div class="videos">
+            <iframe width="500" height="400" src="https://www.youtube.com/embed/_7fZLaqAVMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>
+        <section class="contact" id="contact">
+            <br />
+            <br /><div class="one">
+                <table>
+            <tr><td>Nombre:&nbsp&nbsp</td><td><input type="text" id="conText1" class="texts" required="required"/></td></tr>
+            <tr><td>Correo:&nbsp&nbsp</td><td><input type="email" id="conEmail" class="texts"required="required"/></td></tr>
+            <tr><td>Telefono:&nbsp&nbsp</td><td><input type="number" id="conText3" class="texts"required="required"/></td></tr>
+            <tr><td>Ciudad:&nbsp&nbsp</td><td><input type="text" id="conText4" class="texts"required="required"/></td></tr>
+            <tr><td>Descripción:&nbsp&nbsp</td><td><textarea id="conTextArea1" cols="75" rows="10" style="margin-top: 3px; border-radius: 3px;"></textarea></td></tr>
+            </table>
+            <p><input type="submit" id="Submit2" class="buttons2" value="Enviar"/></p>
+            </div>
+            <div class="two"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591.0591294544203!2d-74.11434533473329!3d4.7429320999684474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84867a589c17%3A0x43d554b4584541cd!2sCl.%20132b%20%23135-20%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1603323280820!5m2!1ses-419!2sco" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div><br />
+            <br />
+        </section>
+        <footer class="footer"><p>Footer</p></footer>
+    </form>
+</body>
+</html>
