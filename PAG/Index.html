@@ -3,10 +3,12 @@
 <html>
 <head>
     <title>La Exitosa</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
     <link href="Index.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Index.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/LOGO.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <form id="form1">
@@ -15,17 +17,23 @@
             <ul>
                 <li class="ul"><a class="a" onclick="scrollto('contact')">Contactanos</a></li>
                 <li class="ul"><a class="a" href="Carnes.html">Tipos de Carnes</a>
+                    <ul>
+                        <li><a class="a" href="Carnes.html#res">Res</a></li>
+                        <li><a class="a" href="Carnes.html#res">Pollo</a></li>
+                        <li><a class="a" href="Carnes.html#res">Cerdo</a></li>
+                    </ul>
                 </li>
                 <li class="ul"><a class="a" href="Info.html">Acerca de Nosotros</a>
                     <ul>
-                        <li><a class="a" href="Info.html#mission">Misión</a></li>
-                        <li><a class="a" href="Info.html#vision">Visión</a></li>
-                        <li><a class="a" href="Info.html#objectives">Objetivos</a></li>
+                        <li><a class="a" href="Info.html#aboutus">Misión</a></li>
+                        <li><a class="a" href="Info.html#aboutus">Visión</a></li>
+                        <li><a class="a" href="Info.html#aboutus">Objetivos</a></li>
+                        <li><a class="a" href="Info.html#video">Nosotros</a></li>
                     </ul>
                     </li>
                 <li class="ul"><a class="a" onclick="scrollto('services')">Servicios</a>
                     <ul>
-                        <li><a class="a" onclick="scrollto('domicilio')">Domicilio</a></li>
+                        <li><a class="a" onclick="scrollto('extra')">Politicas de Calidad</a></li>
                     </ul>
                 </li>
                 <li class="ul"><a class="a" onclick="scrollto('slider')">Inicio</a></li>
@@ -45,16 +53,21 @@
             <div class="ImgServices2"><img src="Images/Salubridad.png" ><br>El objetivo principal al momento de venta de alimentos de consumo, es la buena calidad de los mismos, mantener su integridad y evitar un mal manejo de los alimentos, una mala salubridad conlleva un riesgo para nuestros clientes.</div>
             <div class="ImgServices3"><img src="Images/Atencion.png" ><br>Es prioridad una buena atencion a los clientes, la idea no es solo vender productos si no vender una atencion que nuestros clientes se sientan a gusto con volver, nuestro mayor gusto es un cliente bien atendido con productos de calidad</div>
         </section>
-        <section class="domicilio" id="domicilio">
+        <section class="extra" id="extra">
+            <p><br></p><h1 style="margin-left: 42vw; font-size: 5vh; font-family: 'Pacifico', cursive;;">Políticas de Calidad</h1>
             <div class="imagen">
-        <img src="Images/moto-carniceria.png" height="450" width="400vw" />    
+        <img src="Images/local-image.jpeg" style="width: 25vw;" />
             </div>
-            <div class="texto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mi erat. Duis ut diam est. Aenean vestibulum diam nisi, sit amet porta sapien pharetra bibendum. Quisque at tristique nisi, nec malesuada dui. Quisque eget accumsan augue. Phasellus sit amet maximus nulla. Ut ultricies nisi ut commodo eleifend. Donec ullamcorper venenatis mauris quis fermentum. Duis id tortor posuere tortor molestie viverra. Integer tincidunt dolor a urna luctus varius. Etiam ligula sem, mattis sed suscipit non, dictum quis elit. Ut at ultricies lacus, sit amet elementum ipsum. Nullam at odio tincidunt, pharetra diam non, blandit lectus.
-
-          Maecenas pharetra consequat nisl vel tincidunt. Donec convallis laoreet felis eu fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu varius ex. Nam porttitor dolor eu pellentesque finibus. Morbi tempor convallis quam, sed dapibus orci gravida a. Etiam a posuere orci. Curabitur laoreet, enim vitae placerat tristique, lacus magna ullamcorper elit, sit amet tempor ante felis in purus. Quisque vulputate felis ipsum, eu blandit nibh fermentum vitae.</p>
+            <div class="texto" style="margin-top: 13vh; font-size: 3vh;"> 
+                <p>Honestidad: ideales en nuestras ventas para evitar que nuestros clientes se vean en desventaja, lo esencial desde nuestro punto de vista es un cliente satisfecho y bien atendido</p>
+                    <p>Respeto: lo mejor que podemos ofrecer a nuestros clientes a parte de excelentes productos es respeto, como personas que ayudan a crecer nuestro emprendimiento merecen la mejor atencion</p> </div>
+            <div class="imagen">
+        <img src="Images/local-image-dos.jpeg" style="width: 25vw; margin-top: 40vh;"/>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="texto" style="margin-top: 55vh; font-size: 3vh;">
+                <p>Escucha: es importante tomar las referencias que recibamos de nuestros clientes en nuestros productos, es necesario mejorar cada dia y son los consumidores los mas sinceros catadores de nuestros productos</p>
+                <p>Amabilidad: como tienda ofrecemos de las mejores atenciones en busca de clientes satisfechos y con ganas de volver en un futuro, es de lo mas importante</p>
+             </div>
     </section>
             <section class="contact" id="contact">
             <br />
@@ -64,7 +77,7 @@
             <tr><td>Correo:&nbsp&nbsp</td><td><input type="email" id="conEmail" class="texts"required="required"/></td></tr>
             <tr><td>Telefono:&nbsp&nbsp</td><td><input type="number" id="conText3" class="texts"required="required"/></td></tr>
             <tr><td>Ciudad:&nbsp&nbsp</td><td><input type="text" id="conText4" class="texts"required="required"/></td></tr>
-            <tr><td>Descripción:&nbsp&nbsp</td><td><textarea id="conTextArea1" cols="75" rows="10" style="margin-top: 3px; border-radius: 3px;"></textarea></td></tr>
+            <tr><td>Descripción:&nbsp&nbsp</td><td><textarea id="conTextArea1" cols="65" rows="10" style="margin-top: 3px; border-radius: 3px;"></textarea></td></tr>
             </table>
             <p><input type="submit" id="Submit2" class="buttons2" value="Enviar"/></p>
             </div>

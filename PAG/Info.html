@@ -3,10 +3,12 @@
 <html>
 <head>
     <title>Acerca de Nosotros</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
     <link href="Index.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Index.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/LOGO.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <form id="form1">
@@ -15,17 +17,23 @@
             <ul>
                 <li class="ul"><a class="a" onclick="scrollto('contact')">Contactanos</a></li>
                 <li class="ul"><a class="a" href="Carnes.html">Tipos de Carnes</a>
+                    <ul>
+                        <li><a class="a" href="Carnes.html#res">Res</a></li>
+                        <li><a class="a" href="Carnes.html#res">Pollo</a></li>
+                        <li><a class="a" href="Carnes.html#res">Cerdo</a></li>
+                    </ul>
                 </li>
                 <li class="ul"><a class="a" onclick="scrollto('slider')">Acerca de Nosotros</a>
                     <ul>
-                        <li><a class="a" onclick="scrollto('services')">Misión</a></li>
-                        <li><a class="a" onclick="scrollto('services')">Visión</a></li>
-                        <li><a class="a" onclick="scrollto('services')">Objetivos</a></li>
+                        <li><a class="a" onclick="scrollto('aboutus')">Misión</a></li>
+                        <li><a class="a" onclick="scrollto('aboutus')">Visión</a></li>
+                        <li><a class="a" onclick="scrollto('aboutus')">Objetivos</a></li>
+                        <li><a class="a" onclick="scrollto('video')">Nosotros</a></li>
                     </ul>
                     </li>
                 <li class="ul"><a class="a" href="Index.html#services">Servicios</a>
                     <ul>
-                        <li><a class="a" href="Index.html#domicilio">Domicilio</a></li>
+                        <li><a class="a" href="Index.html#extra">Politicas de Calidad</a></li>
                     </ul>
                 </li>
                 <li class="ul"><a class="a" href="Index.html">Inicio</a></li>
@@ -43,25 +51,19 @@
         <section class="aboutus" id="aboutus">
             <div class="Imgaboutus1"><img src="Images/Mision.png" ><p><br></p><h3>Misión:</h3><br> Satisfacer al cliente con buenos productos de calidad con equipo de trabajo calificado y certificado con buen servicio para crecer cada día más como empresa.</div>
             <div class="Imgaboutus2"><img src="Images/Vision.jpeg" ><p><br></p><h3>Visión:</h3><br> Posesionarnos como una buena empresa en el mercado lograr un impacto significativo en la venta de productos cárnicos.
-                <p><br></p><h3>Políticas de Calidad:</h3><br> 
-                <p>Honestidad</p>
-                    <p>Respeto</p> 
-                    <p>Escucha</p>
-                    <p>Amabilidad</p>
                 </div>
-            <div class="Imgaboutus3"><img src="Images/Objetivos.png" ><p><br></p> <h3>Objetivo General:</h3><br> Satisfacer la necesidad del consumo de carne, calidad, higiene y sanidad para los consumidores. <p><br></p> <h3>Objetivo Específico:</h3><br> Eficiencia de en la venta de productos cárnicos.</div>
+            <div class="Imgaboutus3"><img src="Images/Objetivos.png" ><p><br></p><b>Objetivo General:</b> Satisfacer la necesidad del consumo de carne, calidad, higiene y sanidad para los consumidores. <p><br></p> <b>Objetivo Específico:</b> Eficiencia en la venta de productos cárnicos.</div>
         </section>
         <section class="video" id="video">
+            <p><br></p><h1 style="margin-left: 38vw; font-size: 5vh; font-family: 'Pacifico', cursive;">Districarnes La Exitosa</h1>
             <div class="textos">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non mi erat. Duis ut diam est. Aenean vestibulum diam nisi, sit amet porta sapien pharetra bibendum. Quisque at tristique nisi, nec malesuada dui. Quisque eget accumsan augue. Phasellus sit amet maximus nulla. Ut ultricies nisi ut commodo eleifend. Donec ullamcorper venenatis mauris quis fermentum. Duis id tortor posuere tortor molestie viverra. Integer tincidunt dolor a urna luctus varius. Etiam ligula sem, mattis sed suscipit non, dictum quis elit. Ut at ultricies lacus, sit amet elementum ipsum. Nullam at odio tincidunt, pharetra diam non, blandit lectus.
-
-                     Maecenas pharetra consequat nisl vel tincidunt. Donec convallis laoreet felis eu fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu varius ex. Nam porttitor dolor eu pellentesque finibus. Morbi tempor convallis quam, sed dapibus orci gravida a. Etiam a posuere orci. Curabitur laoreet, enim vitae placerat tristique, lacus magna ullamcorper elit, sit amet tempor ante felis in purus. Quisque vulputate felis ipsum, eu blandit nibh fermentum vitae.
-        </p>
+                <p>Somos la distribuidora de carnes que ofrece la mejor calidad en su atencion y carnes, a parte de la venta de distintos productos como huevos, lacteos y sus derivados, ofrecemos de igual forma granos y viveres de excelente calidad en busca de que tengas todo a la mano en Districarnes La Exitosa.</p><br>
+                <p>La seguridad e higiene son prioritarios, nos destacamos por mantener una excelente forma de manipular los alimentos de nuestros clientes.</p>
             </div>
             <div class="videos">
             <iframe width="500" height="400" src="https://www.youtube.com/embed/_7fZLaqAVMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>
+            </section>
         <section class="contact" id="contact">
             <br />
             <br /><div class="one">
